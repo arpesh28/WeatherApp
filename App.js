@@ -1,16 +1,21 @@
 import React from 'react';
-import {View, Text, StatusBar} from 'react-native';
-
-import {Header} from './screens/Header';
+import {View, Text, StatusBar, StyleSheet} from 'react-native';
+import Search from './screens/Search';
 
 const App = () => {
   return (
-    <>
-      <StatusBar barStyle="light-content" backgroundColor="#00aaff" />
-      <Header />
-      <Text>Hello</Text>
-    </>
+    <View style={styles.main}>
+      <StatusBar barStyle="light-content" backgroundColor="#040814" />
+      <Search />
+    </View>
   );
 };
+
+const styles = StyleSheet.create({
+  main: {
+    flex: 1,
+    backgroundColor: '#040814',
+  },
+});
 
 export default App;
